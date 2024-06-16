@@ -25,11 +25,11 @@
     border: none;
     outline: none;
     background-color: #111;
-    color: #eee;
+    color: #fff;
   }
   
   .grid-container > button:hover {
-    background-color: #eee;
+    background-color: #fff;
     color: #111;
   }
   
@@ -43,7 +43,7 @@
   
   .grid-container > .output {
     grid-column: 1 / -1;
-    background: #222;
+    background: #111;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -54,11 +54,11 @@
   }
   
   .grid-container > .output > .previous-operand {
-    color: rgba(255, 255, 255, 0.75);
+    color: #fff;
     font-size: 1.5rem;
   }
   
   .grid-container > .output > .current-operand {
-    color: white;
+    color: #fff;
     font-size: 2.5rem;
   }
