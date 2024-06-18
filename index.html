@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <!-- https://www.youtube.com/watch?v=93wPYo1pjic -->
+    <title>Calc 2</title>
 </head>
 <body>
-    <div class="grid-container">
-            <div class="output">
-                <div data-previous-operand class="previous-operand"></div>
-                <div data-current-operand class="current-operand"></div>
-            </div>
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete>DEL</button>
-        <button data-operator class="operator">/</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operator class="operator">*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operator class="operator">+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operator class="operator">-</button>
-        <button data-number class="span-two">.</button>
-        <button data-number>0</button>
-        <button data-equals class="operator">=</button>
+    <div id="calc">
+        <h3>Calculadora</h3>
+        <div id="operations">
+            <div id="previous-operation">123 +</div>
+            <div id="current-operation">412</div>
+        </div>
+        <div id="buttons-container">
+            <button>CE</button>
+            <button>C</button>
+            <button>DEL</button>
+            <button>/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button>*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button>-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button>+</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button id="equal-btn">=</button>
+        </div>
     </div>
-    <script src="./script.js"></script>
 </body>
 </html>
